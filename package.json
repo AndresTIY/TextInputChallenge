@@ -11,6 +11,11 @@
     "watchTests": "jest --watchAll",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
